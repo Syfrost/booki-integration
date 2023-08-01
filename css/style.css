@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -15,16 +16,62 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background-color: white;
+    gap: 30px;
 }
-
+/* Header Styles */
+header {
+    width: 100%;
+    max-width: 1440px;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 61px;
+    margin: 0 50px;
+}
+.navigation-link {
+    padding-right: 50px;
+}
+.navigation-link li {
+    display: flex;
+    align-items: flex-end;
+    height: 33px;
+}
+.navigation-link li:nth-child(1) {
+    border-top: 2px solid var(--main-color);
+}
+.navigation-link li:nth-child(2) {
+    border-top: 2px solid white;
+}
+.navigation-link ul {
+    display: flex;
+    list-style: none;
+    gap: 68px;
+}
+.navigation-link a {
+    text-decoration: none;
+    display: block;
+    color: var(--main-color);
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+/* Main Content Styles */
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
-
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -42,7 +89,7 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .euro {
@@ -157,6 +204,6 @@ body {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
 }
