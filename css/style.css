@@ -41,6 +41,9 @@ h3 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
+a:link {
+    color: black;
+}
 button {
     background: none;
     color: inherit;
